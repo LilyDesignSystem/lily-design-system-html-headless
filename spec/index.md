@@ -3,10 +3,10 @@
 Living specification for the plain HTML + vanilla JavaScript headless
 implementation of the Lily Design System. Single source of truth for
 spec-driven development of this subproject. For project-wide rules, read the
-root [spec.md](../spec.md) first.
+root [spec/index.md](../../spec/index.md) first.
 
 This file adds HTML-specific detail and tracks the implementation status of
-the **492 canonical components** in this framework.
+the **490 canonical components** in this framework.
 
 ---
 
@@ -25,7 +25,7 @@ and keyboard behaviour that every other framework binding mirrors.
 
 ### In scope
 
-- Plain HTML + vanilla JavaScript implementation of all 492 components.
+- Plain HTML + vanilla JavaScript implementation of all 490 components.
 - WebDriverIO browser tests per component.
 - Zero build dependencies (no bundler required to use a component).
 - Comprehensive per-component HTML file with embedded `<script>` block where
@@ -118,7 +118,7 @@ Each component requires:
 ```
 
 The HTML tag is the canonical tag from the root
-[`AGENTS/components.md`](../AGENTS/components.md) suffix-to-tag mapping.
+[`AGENTS/components.md`](../../AGENTS/components.md) suffix-to-tag mapping.
 
 ## 5. Testing
 
@@ -149,7 +149,7 @@ pnpm run storybook                            # run Storybook
 
 ### 7.1 Catalog parity
 
-- [ ] All 492 canonical components have a `{kebab-case}.html` + `.test.js` +
+- [ ] All 490 canonical components have a `{kebab-case}.html` + `.test.js` +
       `.stories.ts` set.
 - [x] Per-component docs live in the root `../components/{kebab-case}/`
       (shared canonical, not duplicated per subproject).
@@ -184,19 +184,19 @@ pnpm run storybook                            # run Storybook
 
 - [x] Project infrastructure (`package.json`, `wdio.conf.js`).
 - [x] AGENTS.md, CLAUDE.md, index.md, README.md (symlink), plan.md, tasks.md.
-- [x] All 492 components have a `{kebab-case}.html` file (canonical reference).
+- [x] All 490 components have a `{kebab-case}.html` file (canonical reference).
 - [x] Storybook integration with `*.stories.ts` files.
 - [x] Catalog rename: `medical-record-red-box` → `medical-banner-box-for-danger`.
 
 ### 8.2 Verified
 
 - [x] Every component has a corresponding `*.test.js` WebDriverIO spec
-      (**492 / 492**).
-- [x] `pnpm exec wdio run wdio.conf.js` passes: **492 / 492 spec files,
+      (**490 / 490**).
+- [x] `pnpm exec wdio run wdio.conf.js` passes: **490 / 490 spec files,
       zero failures** (parallel with `maxInstances: 8`, ~3 min).
-- [x] CSS class-name audit: **492 / 492** components reference their canonical
+- [x] CSS class-name audit: **490 / 490** components reference their canonical
       kebab-case base class.
-- [x] Storybook story coverage: **492 / 492** components have a
+- [x] Storybook story coverage: **490 / 490** components have a
       `*.stories.ts` file.
 
 ### 8.3 Open backlog
@@ -226,6 +226,6 @@ pnpm run storybook                            # run Storybook
 - Package manager: pnpm (dev-only)
 - License: MIT or Apache-2.0 or GPL-2.0 or GPL-3.0 or BSD-3-Clause
 - Contact: Joel Parker Henderson <joel@joelparkerhenderson.com>
-- Canonical catalog: [../components.tsv](../components.tsv) — 492 components
-- Root spec: [../spec.md](../spec.md)
-- Sibling example app: [../lily-design-system-html-css-js-examples/](../lily-design-system-html-css-js-examples/)
+- Canonical catalog: [../components.tsv](../../components.tsv) — 490 components
+- Root spec: [../spec/index.md](../../spec/index.md)
+- Sibling example app: [../lily-design-system-html-css-js-examples/](../../lily-design-system-html-css-js-examples/)

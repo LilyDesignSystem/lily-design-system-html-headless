@@ -1,16 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/html-vite';
 
 const html = `<input
-  class="ireland-individual-health-identifier-input"
+  class="kypros-national-passport-number-input"
   type="text"
-  aria-label=""
-  inputmode="numeric"
-  pattern="[0-9]{10}"
+  aria-label="National Passport Number"
   autocomplete="off"
 >`;
 
 const meta = {
-  title: 'Headless/IrelandIndividualHealthIdentifierInput',
+  title: 'Headless/KyprosNationalPassportNumberInput',
   render: () => html,
   tags: ['autodocs']
 } satisfies Meta;

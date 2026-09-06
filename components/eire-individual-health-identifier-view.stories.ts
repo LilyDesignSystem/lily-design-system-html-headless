@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/html-vite';
 
 const html = `<span
-  class="ireland-individual-health-identifier-view"
+  class="eire-individual-health-identifier-view"
   aria-label="IHI"
 ></span>`;
 
 const meta = {
-  title: 'Headless/IrelandIndividualHealthIdentifierView',
+  title: 'Headless/EireIndividualHealthIdentifierView',
   render: () => html,
   tags: ['autodocs']
 } satisfies Meta;

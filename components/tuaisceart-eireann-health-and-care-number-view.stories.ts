@@ -1,14 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/html-vite';
 
-const html = `<input
-  class="cyprus-national-passport-number-input"
-  type="text"
-  aria-label="National Passport Number"
-  autocomplete="off"
->`;
+const html = `<span
+  class="tuaisceart-eireann-health-and-care-number-view"
+  aria-label="H&amp;C Number"
+></span>`;
 
 const meta = {
-  title: 'Headless/CyprusNationalPassportNumberInput',
+  title: 'Headless/TuaisceartEireannHealthAndCareNumberView',
   render: () => html,
   tags: ['autodocs']
 } satisfies Meta;
